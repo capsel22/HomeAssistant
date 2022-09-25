@@ -1,6 +1,6 @@
 ---
 # This automation simulates the use of the IKEA TRADFRI Remote control
-# connected through Zigbee2MQTT.
+# connected through ZHA.
 
 # | Button   | Action              |
 # | -------- | ------------------- |
@@ -10,14 +10,14 @@
 # | Right    | Change color        |
 # | Left     | Change saturation   |
 
-# Original blueprint from:
-#  source_url: https://github.com/niro1987/homeassistant-config/blob/main/blueprints/automation/niro1987/zha_ikea_tradfri_5button_remote_color.yaml
+blueprint:
+  source_url: https://github.com/niro1987/homeassistant-config/blob/main/blueprints/automation/niro1987/zha_ikea_tradfri_5button_remote_color.yaml
 
-  name: Zigbee2MQTT - IKEA TRADFRI - 5 Button Remote - Color Lights
+  name: ZHA - IKEA TRADFRI - 5 Button Remote - Color Lights
 
   description: >-
     This automation simulates the use of the IKEA TRADFRI remote control
-    connected through Zigbee2MQTT.
+    connected through ZHA.
 
   domain: automation
 
@@ -27,7 +27,7 @@
       description: Select the remote control you wish to use.
       selector:
         device:
-          integration: Zigbee2MQTT
+          integration: zha
           manufacturer: IKEA of Sweden
           model: TRADFRI remote control
     light:
