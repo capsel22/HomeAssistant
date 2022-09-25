@@ -27,7 +27,7 @@ blueprint:
       description: Select the remote control you wish to use.
       selector:
         device:
-          integration: Zigbee2MQTT
+          integration: MQTT
           manufacturer: IKEA of Sweden
           model: TRADFRI remote control
     light:
