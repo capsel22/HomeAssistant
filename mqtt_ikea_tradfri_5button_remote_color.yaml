@@ -27,9 +27,6 @@ blueprint:
       description: Select the remote control you wish to use.
       selector:
         device:
-          integration: MQTT
-          manufacturer: IKEA of Sweden
-          model: TRADFRI remote control
     light:
       name: Light
       description: Select the light entity you wish to control.
